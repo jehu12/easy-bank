@@ -12,16 +12,18 @@
 <body>
 
   <header class="header">
+    <div class="overlay has-fade"></div>
+
     <nav class="flex flex-jc-sb flex-ai-c">
       <a href="/" class="header__logo">
         <img src="images/logo.svg" alt="Easybank">
       </a>
 
-      <a href="#" class="header__menu hide-for-desktop">
-        <span></span>
-        <span></span>
-        <span></span>
-      </a>
+      <div id="hamburger" class="header__hamburger hide-for-desktop">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
 
       <div class="header__links hide-for-mobile">
         <a href="#">Home</a><a href="#">About</a><a href="#">Contact</a><a href="#">Blog</a><a href="#">Careers</a>
@@ -29,7 +31,28 @@
 
       <a href="#" class="header__cta button hide-for-mobile">Request Invite</a>
     </nav> 
+
+    <div class="header__menu has-fade">
+      <ul class="header__menu--mobile-links">
+        <li class="header__menu--mobile-link"><a href="#">Home</a></li>
+        <li class="header__menu--mobile-link"><a href="#">About</a></li>
+        <li class="header__menu--mobile-link"><a href="#">Contact</a></li>
+        <li class="header__menu--mobile-link"><a href="#">Blog</a></li>
+        <li class="header__menu--mobile-link"><a href="#">Careers</a></li>
+      </ul>
+
+    </div>
   </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+          <div class="hero__text container--pall">
+            <h1>Next generation digital banking</h1>
+          </div>
+      </div>
+    </section>
+  </main>
   
   <script src="app/js/script.js"></script>
 </body>
